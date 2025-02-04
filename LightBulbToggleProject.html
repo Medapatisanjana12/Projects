@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Toggle</title>
+    <style>
+        .bulb {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: none;
+            margin: 50px auto;
+        }
+        #switch {
+            padding: 10px 20px;
+            background-color: green;
+            border: none;
+            color: white;
+            display: block;
+            margin: 20px auto;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bulb"></div>
+    <button type="button" onclick="toggleBulb()" id="switch">Turn on</button>
+
+    <script>
+        function toggleBulb() {
+            let button = document.getElementById("switch");
+            let bulb = document.getElementsByClassName("bulb")[0];
+
+            if (button.innerHTML === "Turn on") {
+                button.innerHTML = "Turn off";
+                button.style.backgroundColor = "red";
+                bulb.style.background = "yellow";
+            } else {
+                button.innerHTML = "Turn on";
+                button.style.backgroundColor = "green";
+                bulb.style.background = "none";
+            }
+        }
+    </script>
+</body>
+</html>
