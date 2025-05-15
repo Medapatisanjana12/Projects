@@ -1,0 +1,46 @@
+.modules {
+  padding: 100px 40px;
+  background-color: #AEC6CF;
+  text-align: center;
+}
+
+.module-link{
+   text-decoration:none;
+   color:inherit;
+}
+.modules h2 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.module-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.module-card {
+  background-color: #ffffff;
+  padding: 25px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.module-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.module-card h3 {
+  color: #1abc9c;
+  margin-bottom: 10px;
+}
+
+.module-card p {
+  color: #555;
+  font-size: 0.95em;
+}
